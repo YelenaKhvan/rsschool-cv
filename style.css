@@ -1,5 +1,5 @@
 @font-face {
- font-family: Unna-Regular;
+  font-family: Unna-Regular;
   src: url("assets/fonts/Unna-Regular.ttf");
 }
 
@@ -7,7 +7,7 @@
     box-sizing: border-box;
   }
 
-  body {
+body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
@@ -21,40 +21,44 @@
   background-image: url("assets/img/background.jpg");
 }
 
- .name {
+.name {
   font-style: italic;
-    font-size: 35px;
-    font-weight: 400;
-    color: #654144;
-    line-height: 1.5;
-
+  font-size: 35px;
+  font-weight: 400;
+  color: #654144;
+  line-height: 1.5;
+  padding: 20px 0 0 100px;
 }
 
-  .nav-list {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-html {
-  scroll-behavior: smooth; 
-}
 .nav-link {
-  padding: 0 20px;
+  padding: 0 50px;
   line-height: 50px;
   text-decoration: none;
   color: #654144;
   transition: color 0.5s;
-
 }
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+} 
+
+html {
+  scroll-behavior: smooth; 
+}
+
 .section-item a {
   color: #409e4d;
   text-decoration: none;  
   transition: color 0.5s;
 }
+
 .section-item a:hover {
   color: #6d2121;
 }
- .header {
+
+.header {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -63,50 +67,52 @@ html {
   background-color: #af9395;
 } 
 
- .container {
+.container {
   max-width: 1440px;
   margin: 0 auto;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
   justify-content: space-between;
   align-items: flex-start;
   padding: 10px;
   margin-left: 5px;
 } 
 
- .item{
+.item{
   display: flex;
   flex: 1 1 auto;
   flex-wrap: wrap;
   gap: 18px;
 } 
 
- .section + .section {
-	margin-left: 4%;
+.section + .section {
+  margin-left: 4%;
 }
 
-  .main-container {
+.main-container {
   display: flex;
   flex-wrap: wrap;
 }  
 
-h1 {
-text-align: center;
-column-span: all;
-padding: 10px;
-}
+.img {
+margin: 0 0 0 100px;
+border: 1px solid rgb(125, 75, 75);
+border-radius: 10px;
+} 
 
+h1,
 h2 {
   text-align: center;
   column-span: all;
 } 
 
 @media (max-width: 768px) {
-  .section {
-    width: 100%;
-  }
+.section {
+  width: 100%;
+}
+
 }
 .section-title {
   font-size: 20px;
@@ -121,17 +127,33 @@ h2 {
 .section {
   width: 600px;
 }
+
 .nav-link:hover {
   color: red;
 }
 
-.section-title::before {
-  content: "";
-  position: absolute;
+.section-title::after {
+  content: "\25BE";
   top: 8px;
-  left: 0px;
-  width: 10px;
-  height: 10px; 
-  border: 1px solid #29322b;
-  border-radius: 50%;
-}  
+  left: 10px;
+  width: 15px;
+  height: 15px; 
+} 
+
+.nav-item {
+text-align: center;
+text-decoration-line: underline;
+}
+
+.nav-item:hover {
+ color: red;
+}
+
+.container {
+  position: relative;
+}
+.nav-i{
+position: absolute;
+  top: 50%;
+  left: 50%;
+} 
