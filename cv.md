@@ -60,6 +60,23 @@ bachelor degree**
  * Kazakh Ablai Khan University of International Relations and World Languages
 
 + Faculty of Romance and Germanic Philology
+
+Almaty city
+
+**2023
+stage-0**
+
+*RS School
++FrontEnd Developer
+
+## Code:
+
+function greet(name) {
+  console.log("Hello, " + name + "!");
+}
+
+greet("Alla");
+
 ## Languages:
 -------------
 + Russian (native)
