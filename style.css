@@ -2,13 +2,13 @@
   font-family: Unna-Regular;
   src: url("assets/fonts/Unna-Regular.ttf");
 }
-
+@media screen and (min-width: 768px) {
 * {
     box-sizing: border-box;
   }
 
 body {
-  min-height: 100vh;
+  max-width: 100%;
   margin: 0;
   padding: 0;
   display: flex;
@@ -39,9 +39,14 @@ body {
   transition: color 0.5s;
 }
 
+.nav{
+  position: relative;
+  max-width: 100%;
+}
 .nav-list {
+  max-width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 } 
 
@@ -60,6 +65,7 @@ html {
 }
 
 .header {
+  max-width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -67,6 +73,7 @@ html {
   border-radius: 20px;
   border: 1px solid #af9395;
   background-color: #af9395;
+  justify-content: center;
 } 
 
 .container {
@@ -76,8 +83,8 @@ html {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
   margin-left: 5px;
 } 
@@ -110,12 +117,6 @@ h2 {
   column-span: all;
 } 
 
-@media (max-width: 768px) {
-.section {
-  width: 100%;
-}
-
-}
 .section-title {
   font-size: 20px;
   font-weight: 600;
@@ -144,9 +145,13 @@ h2 {
 
 .nav-item {
   list-style-type: none;
-text-align: start;
+  position: relative;
+
 }
 
+.nav-items {
+  position: relative;
+}
 .nav-item:hover {
  font-size: 20px;
 }
@@ -154,9 +159,5 @@ text-align: start;
 .container {
   position: relative;
 }
-.nav-i{
-position: absolute;
-  top: 50%;
-  left: 200px;
-} 
-
+.nav-i{position: relative;top: 0px;left: 100px;} 
+}
