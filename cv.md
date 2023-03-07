@@ -99,7 +99,7 @@ greet("Alla");
 + Teamwork skills
 + Stress management
 + Problem-solving
-+ Productivity & organization
++ Productivity and organization
 + Critical thinking
 + Attention to detail
 + Adaptability
