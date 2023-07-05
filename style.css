@@ -1,0 +1,172 @@
+@font-face {
+  font-family: Unna-Regular;
+  src: url("assets/fonts/Unna-Regular.ttf");
+}
+@media screen and (min-width: 768px) {
+* {
+    box-sizing: border-box;
+  }
+
+body {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: black; 
+  background-image: url("assets/img/background.jpg");
+}
+.footer {
+    width: 100%;
+  }
+
+.name {
+  font-style: italic;
+  font-size: 35px;
+  font-weight: 400;
+  color: #654144;
+  line-height: 1.5;
+  padding: 20px 0 0 100px;
+}
+
+.nav-link {
+  padding: 0 50px;
+  line-height: 50px;
+  text-decoration: none;
+  color: #654144;
+  transition: color 0.5s;
+}
+
+.nav{
+  position: relative;
+  max-width: 100%;
+}
+.nav-list {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+html {
+  scroll-behavior: smooth; 
+}
+
+.section-item a {
+  color: #409e4d;
+  text-decoration: none;  
+  transition: color 0.5s;
+}
+
+.section-item a:hover {
+  color: #6d2121;
+}
+
+.header {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 20px;
+  border: 1px solid #af9395;
+  background-color: #af9395;
+  justify-content: center;
+} 
+
+@media screen and (min-width: 768px) {
+  .footer {
+    width: 100%;
+  }
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-left: 5px;
+} 
+
+.item{
+  display: flex;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+  gap: 18px;
+} 
+
+.section + .section {
+  margin-left: 4%;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}  
+
+.img {
+margin: 0 0 0 100px;
+border: 1px solid rgb(125, 75, 75);
+border-radius: 10px;
+} 
+
+h1,
+h2 {
+  text-align: center;
+  column-span: all;
+} 
+
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: rgb(104, 14, 14);
+  position: relative;
+  padding-left: 30px;
+}
+
+.section {
+  width: 600px;
+}
+
+.nav-link:active {
+  color: black;
+}
+
+.section-title::after {
+  content: "\25BE";
+  top: 8px;
+  left: 10px;
+  width: 15px;
+  height: 15px; 
+} 
+
+.nav-item {
+  list-style-type: none;
+  position: relative;
+
+}
+
+.nav-items {
+  position: relative;
+}
+.nav-item:hover {
+ font-size: 20px;
+}
+
+.container {
+  position: relative;
+}
+.nav-i{position: relative;top: 0px;left: 100px;} 
+}
